@@ -78,7 +78,7 @@
         // Recolecta madera cuando el jugador hace clic en el árbol
         function collectWood() {
             if (!tree.isChopped) {
-                wood += 1;
+                wood += 1;  // Aumenta el contador de madera
                 console.log("Madera recolectada. Total: " + wood);
 
                 // Marca el árbol como talado
@@ -99,7 +99,7 @@
 
             if (clickX >= tree.x && clickX <= tree.x + tree.width &&
                 clickY >= tree.y && clickY <= tree.y + tree.height) {
-                collectWood();
+                collectWood();  // Llama a la función de recolectar madera
             }
         });
 
